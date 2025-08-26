@@ -62,9 +62,16 @@ def main():
         
         try:
             # Generate and play audio directly
+            # You can change the voice_id to any from the list
+            # Examples:
+            # "21m00Tcm4TlvDq8ikWAM" - Rachel (American, casual, young, female)
+            # "cgSgspJ2msm6clMCkdW9" - Jessica (American, cute, young, female)
+            # "TX3LPaxmHKxFdv7VOQHJ" - Liam (American, confident, young, male)
+            # "Xb7hH8MSUJpSbSDYk0k2" - Alice (British, professional, middle-aged, female)
+            # "onwK4e9ZLuTAKqWW03F9" - Daniel (British, formal, middle-aged, male)
             audio = elevenlabs.text_to_speech.convert(
                 text=text,
-                voice_id="WejK3H1m7MI9CHnIjW9K",  # Specified voice
+                voice_id="TX3LPaxmHKxFdv7VOQHJ",  # Liam - American, confident, young, male
                 model_id="eleven_turbo_v2_5",
                 output_format="mp3_44100_128",
             )

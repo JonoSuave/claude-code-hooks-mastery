@@ -114,3 +114,6 @@ extras/
 
 # Claude Code data
 .claude/data/
+
+# History
+.history/
